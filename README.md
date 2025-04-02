@@ -1,4 +1,5 @@
-#📌Task Tracker
+📌Task Tracker
+
 Task Tracker es un proyecto diseñado para ayudarte a **rastrear y gestionar tus tareas directamente desde la línea de comandos**. 🚀 Con esta sencilla interfaz CLI, podrás organizar eficientemente tus pendientes, lo que estás haciendo y tus logros. Este proyecto es una excelente oportunidad para fortalecer tus habilidades de programación en Java, incluyendo la manipulación de archivos, el procesamiento de entradas de usuario y la construcción de aplicaciones CLI robustas con Spring Boot y Spring Shell.
 
 ## ✨ Funcionalidades Principales
