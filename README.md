@@ -1,45 +1,95 @@
-📌Task Tracker
+# 📌 Task Tracker
 
-Task Tracker es un proyecto diseñado para ayudarte a **rastrear y gestionar tus tareas directamente desde la línea de comandos**. 🚀 Con esta sencilla interfaz CLI, podrás organizar eficientemente tus pendientes, lo que estás haciendo y tus logros. Este proyecto es una excelente oportunidad para fortalecer tus habilidades de programación en Java, incluyendo la manipulación de archivos, el procesamiento de entradas de usuario y la construcción de aplicaciones CLI robustas con Spring Boot y Spring Shell.
+Task Tracker es una aplicación CLI diseñada para **rastrear y gestionar tareas** directamente desde la línea de comandos. 🚀 Con esta herramienta, puedes organizar eficientemente tus pendientes, lo que estás haciendo y tus logros.
+
+Este proyecto es una excelente oportunidad para fortalecer tus habilidades de programación en **Java**, abarcando manipulación de archivos, procesamiento de entradas de usuario y desarrollo de aplicaciones CLI con **Spring Boot y Spring Shell**.
+
+---
 
 ## ✨ Funcionalidades Principales
 
-Esta aplicación te permitirá interactuar con tus tareas a través de comandos en la terminal. Los requerimientos clave son:
+✅ **Gestión de Tareas:**
+- **➕ Agregar**, **✏️ actualizar** y **🗑️ eliminar** tareas.
+- **🚦 Marcar estado:** Cambia entre **Pendiente (`TODO`)** y **Completada (`DONE`)**.
+- **📄 Listar todas las tareas:** Vista general de tus pendientes y logros.
+- **✅ Filtrar tareas completadas:** Muestra solo las que ya finalizaste.
+- **⏳ Filtrar tareas pendientes:** Muestra solo las que aún están por hacer.
 
-- **➕ Agregar, ✏️ actualizar y 🗑️ eliminar tareas:** Gestiona el ciclo de vida completo de tus tareas.
-- **🚦 Marcar el estado de una tarea:** Podrás indicar si una tarea está **Pendiente (`TODO`)** o **Completada (`DONE`)**.
-- **📄 Listar todas las tareas:** Obtén una visión general de todas tus tareas registradas.
-- **✅ Listar las tareas completadas:** Filtra y visualiza solo las tareas que ya has finalizado.
-- **⏳ Listar las tareas pendientes:** Enfócate en lo que aún necesitas hacer consultando la lista de tareas pendientes.
+💾 **Persistencia de Datos:**
+- Las tareas se almacenan en un **archivo JSON**, permitiendo que los datos se mantengan entre sesiones.
 
-## 💾 Persistencia de Datos
+---
 
-Las tareas se almacenarán en un **archivo JSON** en tu sistema. Esto permitirá que tus tareas persistan entre sesiones de la aplicación.
+## 🛠 Tecnologías Utilizadas
 
-#📋Desarrollo Task Tracker
+| Tecnología | Descripción |
+|------------|------------|
+| **Java** ☕ (versión 21) | Lenguaje de programación principal |
+| **Spring Boot** 🚀 | Framework para construir la aplicación |
+| **Maven** 📦 | Gestor de dependencias |
 
-## Tecnologías Utilizadas
+### 📌 Dependencias Clave
 
-- **Lenguaje:** Java ☕ (versión 21)
-- **Framework:** Spring Boot 🚀
-- **Gestor de Dependencias:** Maven
+1. **Spring Shell Starter (`spring-shell-starter`)** ⌨️
+   - Permite crear una **interfaz CLI interactiva**.
+   
+2. **Lombok** 🧱
+   - Reduce el código repetitivo al generar automáticamente **getters, setters, constructores y métodos comunes**.
+   
+3. **Jackson (`com.fasterxml.jackson.core`)** ⚙️
+   - Facilita la **serialización y deserialización de JSON**.
+   
+4. **Spring Boot DevTools (`spring-boot-devtools`)** 🛠️
+   - Proporciona **reinicio automático** en desarrollo para mejorar la productividad.
 
-## Dependencias
+---
 
-1. **Spring Shell Starter (`spring-shell-starter`)**: ⌨️ Se utiliza para crear una interfaz de línea de comandos (CLI) interactiva para la aplicación. Permite a los usuarios interactuar con las tareas mediante comandos de texto.
-2. **Lombok**: 🧱 Simplifica la escritura de código Java al eliminar la necesidad de escribir código boilerplate como getters, setters, constructores y los métodos `equals()`, `hashCode()` y `toString()` mediante el uso de anotaciones.
-3. **Jackson (`com.fasterxml.jackson.core`)**: ⚙️ Se utiliza para la **serialización** (convertir objetos Java a formato JSON) y **deserialización** (convertir formato JSON a objetos Java) de las tareas, lo que podría ser útil para guardar o transferir datos.
-4. **Spring Boot DevTools (`spring-boot-devtools`)**: 🛠️ Proporciona funcionalidades útiles durante el desarrollo, como el reinicio automático de la aplicación cuando se detectan cambios en el código, lo que acelera el ciclo de desarrollo.
-## Estructura
+## 📂 Estructura del Proyecto
 
-task/
-├── [[⌨️ Cli]]                 # Contiene la lógica de la interfaz de línea de comandos
-├── [[❗ Exceptions]]    # Contiene las excepciones personalizadas de la aplicación
-├── [[🧱 Model]]           # Contiene las clases que representan los datos de la aplicación
-├── [[💾 Repository]]    # Contiene las interfaces e implementaciones
-└── [[⚙️ Service]]          # Contiene la lógica de negocio de la aplicación
+```
+📦 task-tracker
+├── 📂 cli          # Lógica de la interfaz de línea de comandos
+├── 📂 exceptions   # Excepciones personalizadas de la aplicación
+├── 📂 model        # Clases que representan los datos de la aplicación
+├── 📂 repository   # Interfaces e implementaciones de persistencia
+└── 📂 service      # Lógica de negocio de la aplicación
+```
 
+---
 
+## 🚀 Cómo Ejecutar el Proyecto
 
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/jscamposz/Task-Tracker.git
+   cd Task-Tracker
+   ```
+2. **Compilar y ejecutar con Maven:**
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+   ```
+3. **Interacción con la CLI:**
+   - Para agregar una tarea: `add "Nombre de la tarea"`
+   - Para listar tareas: `list`
+   - Para marcar una tarea como completada: `done ID`
+   - Para eliminar una tarea: `delete ID`
 
+---
+
+## 📌 Contribuir
+
+¡Cualquier contribución es bienvenida! Si deseas mejorar este proyecto, sigue estos pasos:
+
+1. **Fork el repositorio**
+2. **Crea una rama nueva (`git checkout -b feature-nueva`)**
+3. **Realiza cambios y haz un commit (`git commit -m "Descripción del cambio"`)**
+4. **Sube los cambios (`git push origin feature-nueva`)**
+5. **Crea un Pull Request**
+
+---
+
+## 📜 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y distribuirlo libremente. 🎉
 
