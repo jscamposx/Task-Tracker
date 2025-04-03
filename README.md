@@ -110,6 +110,55 @@ Esto iniciará la aplicación CLI y mostrará el prompt de Spring Shell para eje
 
 ---
 
+## ⌨️ Comandos CLI Disponibles
+
+### Agregar una tarea:
+```bash
+shell:> add "Comprar pan integral"
+✅ Tarea añadida correctamente: Comprar pan integral
+```
+
+### Listar todas las tareas:
+```bash
+shell:> list
+--- Lista de Tareas ---
+[1] [TODO] Comprar pan integral
+[2] [DONE] Subir código a GitHub
+[3] [TODO] Preparar presentación
+-----------------------
+```
+
+### Listar tareas completadas:
+```bash
+shell:> list-done
+--- Tareas Completadas (DONE) ---
+[2] [DONE] Subir código a GitHub
+---------------------------------
+```
+
+### Listar tareas pendientes:
+```bash
+shell:> list-todo
+--- Tareas Pendientes (TODO) ---
+[1] [TODO] Comprar pan integral
+[3] [TODO] Preparar presentación
+--------------------------------
+```
+
+### Eliminar una tarea:
+```bash
+shell:> delete 1
+✅ Tarea eliminada correctamente con ID: 1
+```
+
+### Actualizar una tarea:
+```bash
+shell:> update 3 "Preparar reunión" "DONE"
+✅ Tarea actualizada correctamente con ID: 3
+```
+
+---
+
 ## 📌 Contribuir
 
 ¡Cualquier contribución es bienvenida! Si deseas mejorar este proyecto, sigue estos pasos:
