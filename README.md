@@ -1,9 +1,6 @@
 # 📌 Task Tracker CLI
 
 Task Tracker es una aplicación CLI diseñada para **rastrear y gestionar tareas** directamente desde la línea de comandos. 🚀 Con esta herramienta, puedes organizar eficientemente tus pendientes, lo que estás haciendo y tus logros.
-
-Este proyecto es una excelente oportunidad para fortalecer tus habilidades de programación en **Java**, abarcando manipulación de archivos, procesamiento de entradas de usuario y desarrollo de aplicaciones CLI con **Spring Boot y Spring Shell**.
-
 Inspirado y basado en el proyecto sugerido en: [roadmap.sh/projects/task-tracker](https://roadmap.sh/projects/task-tracker)
 
 ---
@@ -106,7 +103,7 @@ Si ya tienes el JAR generado (`task-0.0.1-SNAPSHOT.jar`), puedes ejecutarlo dire
 java -jar target/task-0.0.1-SNAPSHOT.jar
 ```
 
-Esto iniciará la aplicación CLI y mostrará el prompt de Spring Shell para ejecutar comandos.
+Esto iniciará la aplicación CLI y mostrará el prompt de Spring Shell para ejecutar comandos (debes tener configurada tu terminal para tener la experiencia completa o ejecutar desde el codigo fuente).
 
 ---
 
