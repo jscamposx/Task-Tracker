@@ -25,7 +25,12 @@ import jakarta.annotation.PostConstruct;
 public class FileTaskRepository implements TaskRepository {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
-    private final Path filePath = Paths.get("C:/Users/Administrador/Documents/Proyecto Web/Proyects/task/tasks.json");
+    private final Path filePath = Paths.get(
+            System.getProperty("user.home"),
+            ".task_tracker",
+            "data",
+            "tasks.json"
+    );
     private final ReentrantLock lock = new ReentrantLock();
     private List<Task> tasks = new ArrayList<>();
 
