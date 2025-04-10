@@ -154,19 +154,7 @@ shell:> update 3 "Preparar reunión" "DONE"
 ✅ Tarea actualizada correctamente con ID: 3
 ```
 
----
 
-## 📌 Contribuir
-
-¡Cualquier contribución es bienvenida! Si deseas mejorar este proyecto, sigue estos pasos:
-
-1. **Fork** el repositorio ([https://github.com/jscamposz/Task-Tracker.git](https://github.com/jscamposz/Task-Tracker.git)).
-2. Crea una **rama nueva** para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz **commit** (`git commit -am "Añade nueva funcionalidad X"`).
-4. **Sube** tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
-5. Abre un **Pull Request** en el repositorio original.
-
----
 
 ## 📜 Licencia
 
